@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  font-family: "Roboto", "Ubuntu", "Cantarell", "Helvetica", sans-serif;
+  background-color: #ffffff; }
+
+h1,
+h4 {
+  color: #000000;
+  text-transform: uppercase; }
+
+p,
+span {
+  color: #000000; }
+
+input,
+textarea {
+  background-color: #ffffff;
+  border: 0.5px solid #000000; }
+
+header {
+  height: 100vh;
+  background-image: url(.././img/header_background_v1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.top-wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%; }
+  .top-wrapper .logo img {
+    width: 220px;
+    position: absolute;
+    left: 5px; }
+  .top-wrapper nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; }
+    .top-wrapper nav a {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 20px 100px;
+      border-right: 1px solid #d3d3d3; }
+      .top-wrapper nav a:last-child {
+        border-right: none; }
+      .top-wrapper nav a:hover {
+        border-right: 1px solid #1697a6; }
+      .top-wrapper nav a:last-child:hover {
+        border-right: none; }
+
+header section {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
+  header section h1 {
+    color: #ffffff; }
+  header section .btn-top {
+    position: relative;
+    top: 40px;
+    color: #ffffff;
+    background-color: #1697a6;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 80px; }
+    header section .btn-top:hover {
+      background-color: #13838f; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%; }
+  main .post-list h1 {
+    text-align: right; }
+
+.toolbar {
+  align-self: flex-end;
+  margin: 20px 5px; }
+  .toolbar input {
+    padding: 15px 25px; }
+    .toolbar input::placeholder {
+      color: #000000;
+      font-size: 15px; }
+
+.post-list article {
+  display: inline-flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #d3d3d3; }
+  .post-list article .post {
+    padding: 10px; }
+    .post-list article .post h3 {
+      text-transform: uppercase;
+      color: #1697a6;
+      padding-top: 10px;
+      padding-bottom: 5px; }
+    .post-list article .post p {
+      line-height: 25px;
+      text-align: left;
+      font-size: 95%; }
+    .post-list article .post .post-description {
+      color: #FF0000;
+      padding: 15px 0;
+      border-bottom: 1px solid #000000;
+      font-size: 75%; }
+
+article {
+  height: 350px; }
+  article button {
+    float: right;
+    color: #ffffff;
+    background-color: #1697a6;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none; }
+
+#about {
+  margin-top: 40px;
+  padding: 0 15px; }
+  #about h1 {
+    text-align: right; }
+  #about p {
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 15px; }
+  #about img {
+    width: 100%;
+    margin-bottom: 50px; }
+
+#contact h1,
+#contact h4 {
+  text-align: right; }
+#contact button {
+  float: right;
+  color: #ffffff;
+  background-color: #1697a6;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 70px;
+  border: none; }
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+  form .name-field {
+    grid-column: 1; }
+  form .email-field {
+    grid-column: 2; }
+  form .text-field {
+    grid-column: 1/3; }
+  form p {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; }
+    form p label,
+    form p span {
+      color: #1697a6;
+      text-align: right;
+      padding-bottom: 5px; }
+    form p input {
+      height: 40px; }
+    form p textarea {
+      height: 100px; }
+    form p span {
+      margin-top: 20px; }
+
+footer {
+  padding: 20px; }
+  footer span {
+    font-size: 85%; }
